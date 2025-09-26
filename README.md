@@ -78,7 +78,7 @@ En este trabajo revisamos valores faltantes y atípicos, analizamos la distribuc
 ## 👥 Integrantes del equipo
 
 - Sara Estefania Bermudez Alvarez 
-- Yulieth Marcela Urrego Restrepo  
+- Melissa Mahecha Garcia 
 - Camilo Vásquez Suarez
  
 ---
