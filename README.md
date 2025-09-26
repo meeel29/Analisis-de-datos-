@@ -17,6 +17,10 @@ En este trabajo revisamos valores faltantes y atípicos, analizamos la distribuc
 ├── Analisis_Multivariado.ipynb    # Análisis multivariado
 ├── Relaciones_Entre_Variables.ipynb # Relaciones entre variables
 ├── analisis_de_datos.ipynb        # Analisis de datasets
+├── PCA_2D.ipynb                   # Proyección dataset en 2D despues de aplicar PCA
+├── X_procesado_escalado.ipynb     # Variables predictorias normalizadas
+├── y_target.ipynb                 # Variable objetivo separada del resto de columnas
+├── AnalisisTitanicParte3.ipynb    # Analisis preprocesamiento y PCA
 ```
 
 ---
