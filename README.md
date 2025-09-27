@@ -87,6 +87,12 @@ En este trabajo revisamos valores faltantes y atípicos, analizamos la distribuc
  
 ---
 
+## 🎥 Video explicativo
+
+👉 [Video](https://drive.google.com/file/d/1Gg-ZAOuYzXjd0AOAAFnOP9r16TuQ9g5C/view?usp=sharing)
+
+---
+
 ## 📑 Documento complementario
 
 Además de los notebooks incluidos en este repositorio, se preparó un documento en Google Drive con un análisis más detallado y reflexiones adicionales.  
