@@ -1,0 +1,78 @@
+# 🛒 Análisis de Clustering - Mall & Wholesale Customers
+
+Este proyecto corresponde a la Actividad Evaluativa 3 del curso de Análisis de Datos. Se realiza un análisis exploratorio y clustering sobre dos datasets clásicos: **Mall Customers** y **Wholesale Customers**.
+
+---
+
+## 📂 Estructura del repositorio
+
+```
+├── Analisis.ipynb                  # Notebook principal con EDA y clustering
+├── ActividadEvaluativa3Parte3.ipynb # Notebook adicional (parte 3)
+├── Mall_Customers.csv              # Dataset de clientes de centro comercial
+├── Wholesale customers data.csv    # Dataset de clientes mayoristas
+├── data/
+│   ├── mall_clean.csv              # Mall Customers limpio y normalizado
+│   ├── mall_clusters.csv           # Mall Customers con etiquetas de cluster
+│   ├── wholesale_clean.csv         # Wholesale limpio y normalizado
+│   └── wholesale_clusters.csv      # Wholesale con etiquetas de cluster
+```
+
+---
+
+## 📊 Descripción de los datasets
+
+- **Mall_Customers.csv**: Información demográfica y de comportamiento de clientes de un centro comercial.
+- **Wholesale customers data.csv**: Datos de compras anuales de clientes mayoristas en diferentes categorías.
+
+---
+
+## 🚦 Flujo de trabajo
+
+1. **Carga y limpieza de datos**  
+   - Revisión de valores nulos y duplicados.
+   - Visualización de distribuciones y outliers.
+   - Normalización de variables numéricas.
+
+2. **Clustering**  
+   - Aplicación de KMeans (con método del codo y silhouette score).
+   - DBSCAN (estimación de eps con k-distance plot).
+   - Clustering jerárquico (dendrograma y agrupamiento).
+   - Visualización de resultados con PCA.
+
+3. **Análisis de clusters**  
+   - Comparación de la distribución de clientes por cluster.
+   - Análisis de negocio de cada grupo.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- Python 3.x
+- pandas, numpy
+- matplotlib, seaborn
+- scikit-learn
+- scipy
+
+---
+
+## 👥 Integrantes
+
+- Sara Estefania Bermudez Alvarez 
+- Melissa Mahecha Garcia 
+- Camilo Vásquez Suarez
+
+---
+
+## 📑 Notebooks principales
+
+- [`Analisis.ipynb`](Analisis.ipynb): EDA, limpieza, clustering y análisis de ambos datasets.
+- [`ActividadEvaluativa3Parte3.ipynb`](ActividadEvaluativa3Parte3.ipynb): Parte adicional del análisis.
+
+---
+
+## 📦 Resultados
+
+Los archivos con los datos limpios y los resultados de clustering se encuentran en la carpeta [`data/`](data/).
+
+---
