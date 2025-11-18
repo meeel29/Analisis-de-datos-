@@ -1,0 +1,147 @@
+## 📘 Análisis de Datos – Modelos de Machine Learning
+
+Subimos los notebooks desarrollados para el análisis, preprocesamiento y experimentación con distintos modelos de Machine Learning supervisado y no supervisado, aplicados a dos tipos de problemas:
+
+- Predicción del rendimiento académico de estudiantes.
+
+- Clasificación de sentimiento en texto (reseñas).
+
+Además incluimos técnicas de reducción de dimensionalidad, vectorización de texto, visualizaciones, métricas, y la comparación detallada de tres métodos de ML.
+---
+## 📂 Contenido de los notebooks
+1. Predicción del rendimiento académico – Student Performance (Math)
+✔ Descripción del problema
+
+Se busca predecir la variable GradeClass (alto / medio / bajo) derivada de la nota final G3, usando características académicas, personales y contextuales de estudiantes.
+
+✔ Preprocesamiento realizado
+
+Imputación de valores faltantes (mediana/moda).
+
+Codificación One-Hot para variables categóricas.
+
+Estandarización de variables numéricas.
+
+División train/test 75/25, estratificada.
+
+✔ Modelos evaluados
+
+Regresión Logística
+
+Árboles de Decisión
+
+Random Forest
+
+✔ Visualizaciones
+
+Histogramas y distribución de notas.
+
+Matriz de correlación.
+
+Importancia de características según los modelos.
+
+2. Clasificación de Sentimiento en Texto
+
+(Basado en reseñas positivas/negativas)
+
+✔ Procesamiento de texto
+
+Limpieza: minúsculas, eliminación de puntuación, stopwords y tokens ruidosos.
+
+Tokenización y vectorización usando TF-IDF (máx. features = 5000).
+
+Se usaron unigramas (palabras individuales).
+
+Los bigramas no se usaron debido al alto costo computacional y la dispersión de la matriz.
+
+✔ Modelos comparados
+
+Naive Bayes
+
+Regresión Logística
+
+SVM (LinearSVC)
+
+✔ Resultados principales
+
+SVM tuvo la mejor precisión y generalización.
+
+Regresión Logística también funcionó muy bien en texto con alta dimensionalidad.
+
+Naive Bayes fue el más rápido, pero el que menor rendimiento obtuvo.
+
+✔ Nubes de palabras
+
+Se generaron wordclouds para reseñas positivas y negativas.
+Se resalta que algunas palabras aparecen en ambos grupos por:
+
+Reseñas mixtas
+
+Palabras neutrales (producto, libro…)
+
+Ruido del dataset
+
+Eliminación de contexto al limpiar el texto
+
+✔ Extracción de palabras más importantes
+
+Se listaron las top 20 palabras positivas y negativas según los coeficientes de Regresión Logística.
+
+3. Reducción de Dimensionalidad
+
+Se aplicaron técnicas para visualizar los embeddings de texto generado por TF-IDF:
+
+✔ PCA (Componentes Principales)
+
+Reduce miles de dimensiones a 2.
+
+Se observó mezcla entre clases, algo normal en texto lineal con TF-IDF.
+
+✔ t-SNE
+
+Captura relaciones no lineales.
+
+Formó grupos más diferenciados que PCA, aunque con cierta superposición.
+
+✔ Wordclouds + Distribuciones
+
+Ayudaron a interpretar patrones de lenguaje en ambos tipos de reseñas.
+---
+## 📊 Métricas utilizadas
+
+Accuracy
+
+F1-Score
+
+Precision / Recall
+
+Matriz de confusión
+
+Para clustering (cuando aplicaba):
+
+Silhouette score
+
+---
+## 📝 Conclusiones
+
+La calidad del preprocesamiento (limpieza, codificación y vectorización) afecta directamente el desempeño de los modelos.
+
+Los modelos lineales (SVM, Regresión Logística) son especialmente efectivos en datos de alta dimensionalidad generados por TF-IDF.
+
+En Student Performance, las variables G1 y G2 son altamente predictivas de la nota final.
+
+PCA muestra mezcla natural entre clases en texto, mientras que t-SNE ofrece una separación más clara y útil para análisis exploratorio.
+
+El proyecto demuestra un flujo completo de ML: EDA → Limpieza → Vectorización → Modelado → Métricas → Reducción → Interpretación.
+---
+
+## 👥 Integrantes
+
+- Sara Estefania Bermudez Alvarez 
+- Melissa Mahecha Garcia 
+- Camilo Vásquez Suarez
+
+---
+## Video
+
+El video correspondiente a los dos ejercicios se encuentra en la ruta: https://youtu.be/OMHdATuk4zQ
